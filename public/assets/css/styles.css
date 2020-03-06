@@ -46,6 +46,8 @@ label {
 
 .video {
 	margin: auto;
+	justify-self: center;
+	align-self: center;
 }
 
 button {
