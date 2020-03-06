@@ -48,17 +48,47 @@ router.get('/answer1/:id', (req, res, next) => {
     });
 });
 
+//route que computa a resposta para a question 5 e atualiza a sum
+router.post('/result/:id', (req, res, next) => {
+  let user;
+  const { result } = req.body;
+  const { id } = req.params;
+  User.findById(id)
+    .then(a => {
+      console.log('This is the user', a);
+      return a.question1 + a.question2 + a.question3 + a.question4 + a.question5;
+    })
+    .then(finalSum => {
+      console.log('This is the final Sum', finalSum);
+      User.findByIdAndUpdate(id, { sum: finalSum });
+    });
+  /* 
+  const { question1 } = req.body;
+  const { id } = req.params;
+
+  User.findByIdAndUpdate(id, { question1 })
+    .then(() => {
+      res.redirect(`/quiz/answer1/${id}`);
+    })
+    .catch(error => {
+      next(error);
+    }); */
+});
+
 // render do resultado final
 router.get('/result/:id', (req, res, next) => {
   let user;
   const { id } = req.params;
+  const sum = 0;
+
   User.findById(id)
     .then(doc => {
       user = doc;
       // não está funcionando este sort, mas é QUASE ISSO
-      return User.find({ limit: 10 });
+      return User.find({}, null, { sort: { sum: -1 } }).limit(10);
     })
     .then(users => {
+      console.log('users');
       console.log(users);
       res.render('quiz/result', { user, users });
     })
