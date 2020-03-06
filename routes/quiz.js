@@ -42,7 +42,53 @@ router.get('/answer1/:id', (req, res, next) => {
     .then(user => {
       const { result } = req.body;
       // função para verificar se a questão escolhida pelo user é a correta. Para os próximos é preciso alterar o número da question e o valor
-      const isAnswerRight = user.question1 === 2;
+      const isAnswerRight = user.question1 === 20;
+
+      console.log(user);
+      res.render('quiz/answer', { user, isAnswerRight, quiz1 });
+    })
+    .catch(error => {
+      next(error);
+    });
+});
+
+//render da question 2
+router.get('/question2/:id', (req, res, next) => {
+  const quiz1 = quiz[1];
+  const { id } = req.params;
+  User.findById(id)
+    .then(user => {
+      console.log(user);
+      res.render('quiz/question', { user, quiz1 });
+    })
+    .catch(error => {
+      next(error);
+    });
+});
+
+//route que computa a resposta para a question 2
+router.post('/question2/:id', (req, res, next) => {
+  const { question2 } = req.body;
+  const { id } = req.params;
+
+  User.findByIdAndUpdate(id, { question2 })
+    .then(() => {
+      res.redirect(`/quiz/answer1/${id}`);
+    })
+    .catch(error => {
+      next(error);
+    });
+});
+
+// render da resposta 2
+router.get('/answer2/:id', (req, res, next) => {
+  const { id } = req.params;
+  const quiz1 = quiz[1];
+  User.findById(id)
+    .then(user => {
+      const { result } = req.body;
+      // função para verificar se a questão escolhida pelo user é a correta. Para os próximos é preciso alterar o número da question e o valor
+      const isAnswerRight = user.question1 === 20;
 
       console.log(user);
       res.render('quiz/answer', { user, isAnswerRight, quiz1 });
