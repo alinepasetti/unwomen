@@ -39,8 +39,8 @@ label {
 	border-color: none;
 }
 
-article > .video {
-	align-self: center;
+article {
+	align-content: center;
 	margin: 2em;
 }
 
