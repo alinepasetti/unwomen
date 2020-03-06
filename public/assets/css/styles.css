@@ -135,3 +135,7 @@ body {
 	background-blend-mode: multiply;
 	background-size: cover;
 }
+
+h2 {
+  font-family: 'PlayfairDisplay';
+}
