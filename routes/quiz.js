@@ -52,49 +52,6 @@ router.get('/answer1/:id', (req, res, next) => {
     });
 });
 
-//render da question 5
-router.get('/question5/:id', (req, res, next) => {
-  let quiz1 = quiz[0];
-  const { id } = req.params;
-  User.findById(id)
-    .then(user => {
-      console.log(user);
-      res.render('quiz/question', { user, quiz1 });
-    })
-    .catch(error => {
-      next(error);
-    });
-});
-
-//route que computa a resposta para a question 5 e atualiza a sum
-router.post('/question5/:id', (req, res, next) => {
-  let user;
-  const { result } = req.body;
-  const { id } = req.params;
-  console.log(result);
-  User.findById(id)
-    .then(a => {
-      console.log('This is the user', a);
-      return a.question1 + a.question2 + a.question3 + a.question4 + a.question5;
-    })
-    .then(finalSum => {
-      console.log('This is the final Sum', finalSum);
-      User.findByIdAndUpdate(id, { sum: finalSum });
-    })
-    .then(res.redirect('/result/:id'));
-  /* 
-  const { question1 } = req.body;
-  const { id } = req.params;
-
-  User.findByIdAndUpdate(id, { question1 })
-    .then(() => {
-      res.redirect(`/quiz/answer1/${id}`);
-    })
-    .catch(error => {
-      next(error);
-    }); */
-});
-
 // render do resultado final
 router.get('/result/:id', (req, res, next) => {
   let user;
@@ -108,8 +65,6 @@ router.get('/result/:id', (req, res, next) => {
       return User.find({}, null, { sort: { sum: -1 } }).limit(10);
     })
     .then(users => {
-      console.log('users');
-      console.log(users);
       res.render('quiz/result', { user, users });
     })
     .catch(error => {
@@ -122,3 +77,44 @@ router.get('/private', routeGuard, (req, res, next) => {
 });
 
 module.exports = router;
+
+// Código que foi utilizado para a questão 5
+/* 
+//render da question 5
+router.get('/question5/:id', (req, res, next) => {
+  let quiz1 = quiz[4];
+  const { id } = req.params;
+  User.findById(id)
+    .then(user => {
+      console.log(user);
+      res.render('quiz/question', { user, quiz1 });
+    })
+    .catch(error => {
+      next(error);
+    });
+});
+
+//route que computa a resposta para a question 5 e atualiza a sum
+router.post('/question5/:id', (req, res, next) => {
+  const { question5 } = req.body;
+  const { id } = req.params;
+  console.log(question5, typeof question5);
+  //Update da question find no user
+
+  User.findByIdAndUpdate(id, { question5 }).then(user => {
+    console.log('This is the user', user);
+  });
+
+  /*  
+      const sum =
+        user.question1 + user.question2 + user.question3 + user.question4 + Number(question5);
+      const data = { sum, question5 };
+      console.log(sum);
+      console.log(data);
+      //return user.findByIdAndUpdate(user._id, data);
+    })
+    .then(user => {
+      console.log(user);
+      res.redirect('/result/:id');
+    }); 
+}); */
