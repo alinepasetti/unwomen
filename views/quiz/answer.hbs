@@ -41,9 +41,11 @@
 <h1>Answer</h1>
 
 {{#if isAnswerRight}}
-Winner
+{{quiz1.rightAnswer.[0]}}
+{{quiz1.rightAnswer.[1]}}
 {{else}}
-Lost
+{{{quiz1.wrongAnswer.[0]}}}
+{{{quiz1.wrongAnswer.[1]}}}
 {{/if}}
 {{user.name}}
 

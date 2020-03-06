@@ -8,7 +8,7 @@ const quiz = require('./../quiz.json');
 
 //render da question 1
 router.get('/question1/:id', (req, res, next) => {
-  let quiz1 = quiz[0];
+  const quiz1 = quiz[0];
   const { id } = req.params;
   User.findById(id)
     .then(user => {
@@ -37,13 +37,29 @@ router.post('/question1/:id', (req, res, next) => {
 // render da resposta 1
 router.get('/answer1/:id', (req, res, next) => {
   const { id } = req.params;
+  const quiz1 = quiz[0];
   User.findById(id)
     .then(user => {
+      const { result } = req.body;
       // função para verificar se a questão escolhida pelo user é a correta. Para os próximos é preciso alterar o número da question e o valor
       const isAnswerRight = user.question1 === 2;
 
       console.log(user);
-      res.render('quiz/answer', { user, isAnswerRight });
+      res.render('quiz/answer', { user, isAnswerRight, quiz1 });
+    })
+    .catch(error => {
+      next(error);
+    });
+});
+
+//render da question 5
+router.get('/question5/:id', (req, res, next) => {
+  let quiz1 = quiz[0];
+  const { id } = req.params;
+  User.findById(id)
+    .then(user => {
+      console.log(user);
+      res.render('quiz/question', { user, quiz1 });
     })
     .catch(error => {
       next(error);
@@ -51,10 +67,11 @@ router.get('/answer1/:id', (req, res, next) => {
 });
 
 //route que computa a resposta para a question 5 e atualiza a sum
-router.post('/result/:id', (req, res, next) => {
+router.post('/question5/:id', (req, res, next) => {
   let user;
   const { result } = req.body;
   const { id } = req.params;
+  console.log(result);
   User.findById(id)
     .then(a => {
       console.log('This is the user', a);
@@ -63,7 +80,8 @@ router.post('/result/:id', (req, res, next) => {
     .then(finalSum => {
       console.log('This is the final Sum', finalSum);
       User.findByIdAndUpdate(id, { sum: finalSum });
-    });
+    })
+    .then(res.redirect('/result/:id'));
   /* 
   const { question1 } = req.body;
   const { id } = req.params;
