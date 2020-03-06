@@ -90,4 +90,14 @@ article {
     align-self: center;
     margin: 2em; }
 
+.blog-title p {
+  font-size: 0.8em;
+  padding-left: 3em; }
+
+.blog-title h1 {
+  padding-left: 1em; }
+
+.blog-title video {
+  width: 2.8em; }
+
 /*# sourceMappingURL=style.css.map */
