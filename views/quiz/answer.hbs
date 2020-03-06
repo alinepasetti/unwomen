@@ -22,9 +22,8 @@
   <div class="d-flex flex-column justify-content-center align-content-center" style="margin: 5vw 10vw;">
 
     {{#if isAnswerRight}}
-    <h2 class="correctAswer">Correct</h2>
-
-    <h3>{{{quiz1.rightAnswer.[0]}}}</h3>
+    <h2 class="correctAswer">{{{quiz1.rightAnswer.[0]}}}</h2>
+    
     <p>{{{quiz1.rightAnswer.[1]}}}</p>
 
     {{else}}
@@ -36,7 +35,7 @@
 
   
     <a href="/quiz/{{quiz1.next}}/{{user._id}}" class="btn btn-primary" role="button" href="" style="min-width:80%; max-width: 10px; 	border-radius: 8px;
-	background-color: #d6336c; align-self-center">&nbsp;<i class="fa fa-arrow-right"></i>Next question</a>
+	background-color: #d6336c; align-self-center">Next question&nbsp;<i class="fa fa-arrow-right"></i></a>
 
   </div>
 
