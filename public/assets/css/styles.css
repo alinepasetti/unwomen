@@ -39,7 +39,7 @@ label {
 	border-color: none;
 }
 
-article {
+.blog-title {
 	align-content: center;
 	margin: 2em;
 }
