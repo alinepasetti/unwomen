@@ -108,6 +108,7 @@ article {
 .Blogs {
 	display: flex;
 	align-content: center;
+	max-width: 90vw;
 }
 
 article > .video {
