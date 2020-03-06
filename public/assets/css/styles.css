@@ -1,0 +1,18 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+.bodyQuestion {
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	width: 100vw;
+	margin: 0;
+}
+
+body {
+	margin: 5em;
+}

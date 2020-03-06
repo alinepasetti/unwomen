@@ -1,4 +1,4 @@
-*, *:before, *:after {
+/* *, *:before, *:after {
   box-sizing: border-box; }
 
 body {
@@ -82,4 +82,4 @@ textarea {
   width: 40px;
   padding-right: 10px; }
 
-/*# sourceMappingURL=style.css.map */
+# sourceMappingURL=style.css.map */
