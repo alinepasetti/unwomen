@@ -19,11 +19,11 @@ router.get('/create', (req, res, next) => {
   res.render('blog/create');
 });
 router.post('/create', (req, res, next) => {
-  const { title, img, content, video } = req.body;
+  const { title, img, category, video } = req.body;
   const data = {
     title,
     img,
-    content,
+    category,
     video
   };
   Blog.create(data)
