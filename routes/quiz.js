@@ -244,8 +244,9 @@ router.get('/result/:id', (req, res, next) => {
     })
     .then(users => {
       const moreThan50 = user.sum > 50;
+      const score100 = user.sum == 100;
       console.log(moreThan50);
-      res.render('quiz/result', { user, users, moreThan50 });
+      res.render('quiz/result', { user, users, moreThan50, score100 });
     })
     .catch(error => {
       next(error);
