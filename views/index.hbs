@@ -12,25 +12,32 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-light navbar-expand-md" style="color: rgb(227,15,129);background-color: #f9dff3;">
+  <nav>
     <div class="container-fluid"><a class="navbar-brand" href="#">Equalizer</a></div>
   </nav>
   <div class="highlight-clean">
     <div class="container d-flex flex-column align-items-center">
       <div class="intro">
-        <h2 class="text-center">Vestibulum nibh erat, pellentesque ut laoreet vitae.<br></h2>
+        <h2 class="text-center ;
+  font-family: PlayfairDisplay;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #51427d;">Vestibulum nibh erat, pellentesque ut laoreet vitae.<br></h2>
         <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat,
           pellentesque ut laoreet vitae. </p>
       </div>
-      <form method="POST" action="/create-user" class="align-items-center">
-        <input class="bg-light border rounded border-light form-control-sm align-self-center" type="text"
-          style="width: 319px;max-width: 60%;min-width: 40%;margin: 0;" name="name" placeholder="Name" autocomplete="off">
-        <div class="buttons"><button class="btn btn-primary" role="button" href=""
-            style="max-width: 100%;min-width: 80%;background-color: rgb(201,5,218);">Ir para Conteúdo&nbsp;<i
-              class="fa fa-arrow-right"></i></button></div>
+      <form method="POST" action="/create-user" class="align-content-center" style="align-content-center">
+        <input class="bg-light border rounded border-light form-control-sm" type="text" name="name" placeholder="Name"
+          autocomplete="off">
+        <div class="buttons"><button class="btn btn-primary" role="button" href="" style="max-width: 100%;min-width: 80%;	border-radius: 8px;
+	background-color: #d6336c;">Ir para Conteúdo&nbsp;<i class="fa fa-arrow-right"></i></button></div>
         <div class="buttons"><a class="btn btn-primary" role="button"
-            href="https://api.whatsapp.com/send?text=Look%20this%20quiz!%20http://localhost:3000/"
-            style=" min-width: 80%;max-width: 100%; background-color: rgb(1,217,22);">Compartilhar no
+            href="https://api.whatsapp.com/send?text=Look%20this%20quiz!%20http://localhost:3000/" style=" min-width: 80%;max-width: 100%; border-radius: 8px;
+	background-color: #37b24d;">Compartilhar no
             Whatsapp&nbsp;<i class="fa fa-whatsapp"></i></a>
         </div>
     </div>

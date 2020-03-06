@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 *,
 *:before,
 *:after {
@@ -8,18 +10,67 @@
 	flex-direction: column;
 }
 
-nav {
+nav,
+.navbar-brand {
 	width: 100vw;
 	margin: 0;
+	font-family: PlayfairDisplay;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.6;
+	color: #80284c;
+	letter-spacing: normal;
+	text-decoration: none;
+}
+.imagemQuestion {
+	display: flex;
+	align-self: center;
+}
+
+label {
+	font-family: PlayfairDisplay;
+	font-weight: normal;
+	font-size: 1.5em;
+	margin: 0.1em;
 }
 
 body {
 	margin: 0;
+	line-height: 1;
+	color: #987d86;
+	font-family: 'Muli';
+}
+
+.radio-inline {
+	margin-bottom: 0;
+	padding: 0%;
+	justify-self: center;
+}
+
+input {
+	margin-bottom: 2em;
 }
 
 body > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 	margin: 1em;
+	font-family: Muli, sans-serif;
 }
+
 body > img {
 	margin: 0 auto;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+form > input {
+	max-width: 100%;
+	min-width: 40%;
 }
