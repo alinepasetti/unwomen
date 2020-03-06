@@ -39,12 +39,12 @@ label {
 }
 
 button {
-  margin-top: 2em;
-  align-self: center;
-  justify-self: center;
-  border: pink;
-  text-decoration: none;
-  border-style: none;
+	margin-top: 3em;
+	align-self: center;
+	justify-self: center;
+	border: pink;
+	text-decoration: none;
+	border-style: none;
 }
 
 body > div > img {
@@ -61,12 +61,6 @@ a {
 
 p {
   line-height: 1.5em;
-}
-body {
-  margin: 0;
-  line-height: 1;
-  color: #987d86;
-  font-family: 'Muli';
 }
 
 .radio-inline {
@@ -92,7 +86,8 @@ body > img {
   margin: 0 auto;
 }
 
-.correctAswer {
+.correctAswer,
+.wrongAswer {
   font-family: PlayfairDisplay;
   font-size: 28px;
   font-weight: bold;
@@ -100,6 +95,9 @@ body > img {
   font-style: normal;
   line-height: 1.25;
   letter-spacing: normal;
+}
+
+.correctAswer {
   color: #64b27e;
 }
 form {
@@ -126,6 +124,22 @@ form > input {
   border-radius: 3px;
 }
 
+img {
+  border-radius: 8px;
+  box-shadow: 0 8px 10px 0 rgba(214, 51, 108, 0.04);
+}
+
+body {
+  margin: 0;
+  line-height: 1;
+  color: #987d86;
+  font-family: 'Muli';
+  background-color: #fffbfb;
+  background-image: url(../../images/bgimage.svg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
 h2 {
-  font-family: 'PlayfairDisplay';
+	font-family: 'PlayfairDisplay';
 }
