@@ -24,18 +24,17 @@
     {{#if isAnswerRight}}
     <h2 class="correctAswer">{{{quiz1.rightAnswer.[0]}}}</h2>
     
-    <p>{{{quiz1.rightAnswer.[1]}}}</p>
+    <p style="color: #987d86; font-family: Muli;">{{{quiz1.rightAnswer.[1]}}}</p>
 
     {{else}}
 
-    <h3>{{{quiz1.wrongAnswer.[0]}}}</h3>
-    <p>{{{quiz1.wrongAnswer.[1]}}}</p>
+    <h3 class="wrongAswer" style="color: #d6336c;">{{{quiz1.wrongAnswer.[0]}}}</h3>
+    <p style="color: #987d86; font-family: Muli;">{{{quiz1.wrongAnswer.[1]}}}</p>
 
     {{/if}}
 
   
-    <a href="/quiz/{{quiz1.next}}/{{user._id}}" class="btn btn-primary" role="button" href="" style="min-width:80%; max-width: 10px; 	border-radius: 8px;
-	background-color: #d6336c; align-self-center">Next question&nbsp;<i class="fa fa-arrow-right"></i></a>
+    <a href="/quiz/{{quiz1.next}}/{{user._id}}" class="btn btn-primary" role="button" style="min-width:80%; max-width: 10px; 	border-radius: 8px; background-color: #d6336c; align-self-center;">Next question&nbsp;<i class="fa fa-arrow-right"></i></a>
 
   </div>
 

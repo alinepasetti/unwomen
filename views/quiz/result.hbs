@@ -27,14 +27,14 @@
     <p class="text-center"
       style="font-size: 2em;line-height: -13.8;color: #51427d;font-weight: bold;font-family: PlayfairDisplay;">Amazing!
     </p>
-    <p>You already have a lot of information. Check our blog for news and more information. <br>We would love to get in
+    <p style="color: #987d86; font-family: Muli;">You already have a lot of information. Check our blog for news and more information. <br>We would love to get in
       touch with you to discuss actions that we can do to change the future now.</p>
     {{else if score100}}
 
     <p class="text-center"
       style="font-size: 2em;line-height: -13.8;color: #51427d;font-weight: bold;font-family: PlayfairDisplay;">
       Contratulations!</p>
-    <p>You have a good knowledge about gender equality, but information is never enough! <br>Check our blog for more
+    <p style="color: #987d86; font-family: Muli;">You have a good knowledge about gender equality, but information is never enough! <br>Check our blog for more
       information, follow us on our social media and let´s discuss actions that we can do it to change this gender
       inequality. <br>Remember: Starts with you! ;)</p>
 
@@ -48,13 +48,13 @@
 
     {{/if}}
 
-<a href="/blog" class="btn btn-primary" role="button" href="" style="min-width:80%; max-width: 10px; 	border-radius: 8px;
+<a href="/blog" class="btn btn-primary mb-3" role="button" style="min-width:80%; max-width: 10px; 	border-radius: 8px;
 	background-color: #d6336c; align-self-center">See our blog&nbsp;<i class="fa fa-arrow-right"></i></a>
 
 
- <div class="buttons"><a class="btn btn-primary" role="button"
+ <div class="buttons d-flex" style="min-width:80%;"><a class="btn btn-primary mb-3 justify-self-center" role="button"
             href="https://api.whatsapp.com/send?text=Look%20this%20quiz!%20https://worldequalizer.herokuapp.com/quiz/result/{{user._id}}" target="_blank" style=" min-width: 80%;max-width: 100%; border-radius: 8px;
-	background-color: #37b24d;">Share your results!&nbsp;<i class="fa fa-whatsapp"></i></a>
+	background-color: #37b24d; width: 100%;">Share your results!&nbsp;<i class="fa fa-whatsapp"></i></a>
         </div>
 
   

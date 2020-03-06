@@ -92,7 +92,8 @@ body > img {
   margin: 0 auto;
 }
 
-.correctAswer {
+.correctAswer,
+.wrongAswer {
   font-family: PlayfairDisplay;
   font-size: 28px;
   font-weight: bold;
@@ -100,6 +101,9 @@ body > img {
   font-style: normal;
   line-height: 1.25;
   letter-spacing: normal;
+}
+
+.correctAswer {
   color: #64b27e;
 }
 form {
