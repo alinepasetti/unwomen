@@ -4,14 +4,16 @@ const { Router } = require('express');
 const router = new Router();
 const routeGuard = require('./../middleware/route-guard');
 const User = require('../models/user');
+const quiz = require('./../quiz.json');
 
 //render da question 1
 router.get('/question1/:id', (req, res, next) => {
+  let quiz1 = quiz[0];
   const { id } = req.params;
   User.findById(id)
     .then(user => {
       console.log(user);
-      res.render('quiz/question', { user });
+      res.render('quiz/question', { user, quiz1 });
     })
     .catch(error => {
       next(error);
