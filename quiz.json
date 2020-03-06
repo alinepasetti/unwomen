@@ -16,7 +16,7 @@
     ]
   },
   {
-    "id": "question1",
+    "id": "question2",
     "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
     "answer1": ["United States", 20],
     "answer2": ["Switzerland", 0],
@@ -32,7 +32,7 @@
     ]
   },
   {
-    "id": "question1",
+    "id": "question3",
     "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
     "answer1": ["United States", 20],
     "answer2": ["Switzerland", 0],
@@ -48,7 +48,7 @@
     ]
   },
   {
-    "id": "question1",
+    "id": "question4",
     "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
     "answer1": ["United States", 20],
     "answer2": ["Switzerland", 0],
@@ -64,7 +64,7 @@
     ]
   },
   {
-    "id": "question1",
+    "id": "question5",
     "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
     "answer1": ["United States", 20],
     "answer2": ["Switzerland", 0],
