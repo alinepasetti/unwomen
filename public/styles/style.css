@@ -82,4 +82,12 @@ textarea {
   width: 40px;
   padding-right: 10px; }
 
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  article .video {
+    align-self: center;
+    margin: 2em; }
+
 /*# sourceMappingURL=style.css.map */

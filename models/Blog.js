@@ -7,7 +7,7 @@ const schema = new mongoose.Schema({
     type: String,
     trim: true
   },
-  content: String,
+  category: String,
   video: String,
   img: String
 });

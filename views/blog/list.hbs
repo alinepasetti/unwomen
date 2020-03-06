@@ -6,12 +6,12 @@
 <h1>Blog list</h1>
 
 {{#each blogs}}
-<h1>{{title}}</h1>
-<article>
-  <p>{{content}}</p>
-  <img src="{{img}}" alt="{{title}}">
 
-  {{{video}}}
+<article>
+<h1>{{title}}</h1>
+<p>Category: {{category}}</p>
+
+<div class="video">{{{video}}}</div>
 
 </article>
 {{/each}}
