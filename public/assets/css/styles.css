@@ -40,6 +40,8 @@ label {
 }
 
 .blog-title {
+	display: flex;
+	flex-direction: column;
 	align-content: center;
 	margin: 2em;
 }
