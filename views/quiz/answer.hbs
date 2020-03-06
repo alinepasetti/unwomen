@@ -16,9 +16,9 @@
   <nav>
     <div class="container-fluid"><a class="navbar-brand" href="/">Equalizer</a></div>
   </nav>
-  <img class="align-self-center my-auto" src="{{quiz1.img2}}"
-    style="max-width: 80%;min-width: 50%;min-height: 40vh;max-height: 50vH;">
-
+  <div>
+    <img style=" max-width: 80%;min-width: 50%;min-height: 40vh;max-height: 50vH;" src="{{quiz1.img2}}">
+  </div>
   <div class="d-flex flex-column justify-content-center align-content-center" style="margin: 5vw 10vw;">
 
     {{#if isAnswerRight}}
@@ -34,10 +34,9 @@
 
     {{/if}}
 
-    <a href="/quiz/{{quiz1.next}}/{{user._id}}" class="btn btn-primary align-self-center"
-      style="min-width: 20%;max-width: 30vw;">Next question</a>
+  
     <a href="/quiz/{{quiz1.next}}/{{user._id}}" class="btn btn-primary" role="button" href="" style="min-width:80%; max-width: 10px; 	border-radius: 8px;
-	background-color: #d6336c; align-self-center">Submit&nbsp;<i class="fa fa-arrow-right"></i></a>
+	background-color: #d6336c; align-self-center">&nbsp;<i class="fa fa-arrow-right"></i>Next question</a>
 
   </div>
 

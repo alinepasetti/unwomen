@@ -61,8 +61,8 @@
     "next": "question5",
     "question": "Consider this ratio. Guess the category.",
     "answer1": ["Active nurse population", 0],
-    "answer2": ["Employees fired in the private sector", 0],
-    "answer3": ["Domestic violence victims", 20],
+    "answer2": ["Domestic violence victims", 20],
+    "answer3": ["Employees fired in the private sector", 0],
     "img": "/images/domestic_violence_question&answer.png",
     "img2": "/images/domestic_violence_question&answer.png",
     "rightAnswer": [
