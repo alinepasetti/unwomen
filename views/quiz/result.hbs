@@ -13,10 +13,35 @@
     <div class="container-fluid"><a class="navbar-brand" href="#">Equalizer</a></div>
   </nav>
   <div class="d-flex flex-column align-items-center align-content-center" style="margin: 10vw;">
-    <p style="font-family: PlayfairDisplay;font-size: 5em;font-weight: bold;color: #d6336c;">80%</p><strong></strong>
+    <p style="font-family: PlayfairDisplay;font-size: 5em;font-weight: bold;color: #d6336c;">{{user.sum}}%</p><strong></strong>
+    
+    {{#if moreThan50}}
     <p class="text-center"
-      style="font-size: 2em;line-height: -13.8;color: #51427d;font-weight: bold;font-family: PlayfairDisplay;">Lorem
-      ipsum dolor sit met,onsectetur.</p>
+      style="font-size: 2em;line-height: -13.8;color: #51427d;font-weight: bold;font-family: PlayfairDisplay;">Greeeeeeat</p>
+{{else}}
+    <p class="text-center"
+      style="font-size: 2em;line-height: -13.8;color: #51427d;font-weight: bold;font-family: PlayfairDisplay;">You are an assohole</p>
+
+{{/if}}
+
+<table>
+  <thead>
+    <tr>
+    <th>Name</th>
+    <th>Points</th></tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+
+    <tr>
+      <td>{{name}}</td>
+      <td>{{sum}}%</td>
+    </tr>
+{{/each}}
+  </tbody>
+</table>
+
+
   </div>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>

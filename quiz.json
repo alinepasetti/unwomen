@@ -1,71 +1,80 @@
 [
   {
     "id": "question1",
+    "next": "question2",
     "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
     "answer1": ["United States", 20],
     "answer2": ["Switzerland", 0],
     "answer3": ["Japan", 0],
     "img": "/images/country_scatter1.png",
+    "img2": "/images/country_scatter2.png",
     "rightAnswer": [
       "Congratulations!",
-      "<h3>Capitalism right?</h3> <p>And do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br> Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+      "<p>Did you know that there are only two countries in the world that do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br> Curiosity: The country with the highest maternity leave period is Estonia with 80 weeks and the highest paternity leave is Japan with 30 weeks. <br> Mens have paternity leave as well?</p>"
     ],
     "wrongAnswer": [
       ":(",
-      "<h3>This was a tough one!</h3> <p>But do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br>Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+      "<p>This was a tough one! But did you know that there are only two countries in the world that do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br>Curiosity: The country with the highest maternity leave period is Estonia with 80 weeks and the highest paternity leave is Japan with 30 weeks</p>"
     ]
   },
   {
     "id": "question2",
-    "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
-    "answer1": ["United States", 20],
-    "answer2": ["Switzerland", 0],
-    "answer3": ["Japan", 0],
+    "next": "question3",
+    "question": "The following chart shows the percentage of women in political leadership positions worldwide. It was 10% in 1997 and has been rising ever since. What do you think that percentage was in 2019?",
+    "answer1": ["15%", 0],
+    "answer2": ["23%", 20],
+    "answer3": ["42%", 0],
     "img": "/images/country_scatter1.png",
+    "img2": "/images/country_scatter2.png",
     "rightAnswer": [
-      "Congratulations!",
-      "<h3>Capitalism right?</h3> <p>And do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br> Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+      "Yesss! Good Knowledge!",
+      "<p>So little representativeness. As of June 2019, 11 women are serving as Head of State and 12 are serving as Head of Government. <br> And Rwanda has the highest number of women parliamentarians worldwide, where women have won 61.3% of seats in the lower house.</p>"
     ],
     "wrongAnswer": [
-      ":(",
-      "<h3>This was a tough one!</h3> <p>But do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br>Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+      "Keep Going",
+      "<p>Its so little representativeness, that is hard to belive! As of June 2019, 11 women are serving as Head of State and 12 are serving as Head of Government. <br> Did you know that Rwanda has the highest number of women parliamentarians worldwide, where women have won 61.3% of seats in the lower house.</p>"
     ]
   },
   {
     "id": "question3",
-    "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
-    "answer1": ["United States", 20],
-    "answer2": ["Switzerland", 0],
-    "answer3": ["Japan", 0],
+    "next": "question4",
+    "question": "Consider this ratio between men and women. Guess the category.",
+    "answer1": ["Software engineer students", 0],
+    "answer2": ["Nobel laureates", 20],
+    "answer3": ["Company's CEOs", 0],
     "img": "/images/country_scatter1.png",
+    "img2": "/images/country_scatter2.png",
     "rightAnswer": [
-      "Congratulations!",
-      "<h3>Capitalism right?</h3> <p>And do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br> Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+      "Well done!",
+      "<p>Nobel prizes are famous for being heavily gender biased. <br> A 2019 paper published in Nature found that, even though there are fewer women researchers, a mathematical model revealed that women are strongly under-represented among Nobel laureates in all disciplines.</p>"
     ],
     "wrongAnswer": [
-      ":(",
-      "<h3>This was a tough one!</h3> <p>But do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br>Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+      "Not quite right.",
+      "<p>All alternatives would have more men as an answer, but none with a difference as big as the Nobel Prize awards: Nobel prizes are famous for being heavily gender biased. <br> A 2019 paper published in Nature found that, even though there are fewer women researchers, a mathematical model revealed that women are strongly under-represented among Nobel laureates in all disciplines.</p>"
     ]
   },
   {
     "id": "question4",
-    "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
-    "answer1": ["United States", 20],
-    "answer2": ["Switzerland", 0],
-    "answer3": ["Japan", 0],
+    "next": "question5",
+    "question": "Consider this ratio. Guess the category.",
+    "answer1": ["Active nurse population", 0],
+    "answer2": ["Employees fired in the private sector", 0],
+    "answer3": ["Domestic violence victims", 20],
     "img": "/images/country_scatter1.png",
+    "img2": "/images/country_scatter2.png",
     "rightAnswer": [
-      "Congratulations!",
-      "<h3>Capitalism right?</h3> <p>And do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br> Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+      "Correct answer.",
+      "<p>According to data from PSP and GNR, during 2018 in Portugal there were 23.600 reports of domestic violence, 19.971 of which the victimes were female.</p>"
     ],
     "wrongAnswer": [
-      ":(",
-      "<h3>This was a tough one!</h3> <p>But do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br>Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+      "Don´t give up",
+      "<p>According to data from PSP and GNR, during 2018 in Portugal there were 23.600 reports of domestic violence, 19.971 of which the victimes were female.</p>"
     ]
   },
   {
     "id": "question5",
-    "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
+    "next": "result",
+    "question": "5The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
     "answer1": ["United States", 20],
     "answer2": ["Switzerland", 0],
     "answer3": ["Japan", 0],
