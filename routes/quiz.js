@@ -9,6 +9,7 @@ const quiz = require('./../quiz.json');
 //render da question 1
 router.get('/question1/:id', (req, res, next) => {
   const quiz1 = quiz[0];
+  console.log(quiz1);
   const { id } = req.params;
   User.findById(id)
     .then(user => {
