@@ -4,25 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Equalizer</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/Highlight-Clean.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
 </head>
 
-<body class="d-flex flex-column">
-  <nav class="navbar navbar-light navbar-expand-md" style="color: inherit;background-color: #f9dff3;">
-    <div class="container-fluid"><a class="navbar-brand" href="#"
-        style="font-family: PlayfairDisplay;font-weight: bold;color: #80284c;line-height: 1.6;">Equalizer</a></div>
+<body>
+  <nav>
+    <div class="container-fluid"><a class="navbar-brand" href="#">Equalizer</a></div>
   </nav>
   <img class="align-self-center my-auto" src="{{quiz1.img2}}"
     style="max-width: 80%;min-width: 50%;min-height: 40vh;max-height: 50vH;">
 
-  <div class="d-flex flex-column align-items-center align-content-center" style="margin: 10vw;">
+  <div class="d-flex flex-column justify-content-center align-content-center" style="margin: 5vw 10vw;">
 
-{{#if isAnswerRight}}
-
+    {{#if isAnswerRight}}
+    <h2 class="correctAswer">Correct</h2>
 
     <h3>{{{quiz1.rightAnswer.[0]}}}</h3>
     <p>{{{quiz1.rightAnswer.[1]}}}</p>
@@ -32,11 +32,13 @@
     <h3>{{{quiz1.wrongAnswer.[0]}}}</h3>
     <p>{{{quiz1.wrongAnswer.[1]}}}</p>
 
-
     {{/if}}
-    <p class="text-left"><br></p>
-      <a href="/quiz/{{quiz1.next}}/{{user._id}}" class="btn btn-primary align-self-center"
-     style="min-width: 20%;max-width: 50vw;">Next question</a>
+
+    <a href="/quiz/{{quiz1.next}}/{{user._id}}" class="btn btn-primary align-self-center"
+      style="min-width: 20%;max-width: 30vw;">Next question</a>
+    <a href="/quiz/{{quiz1.next}}/{{user._id}}" class="btn btn-primary" role="button" href="" style="min-width:80%; max-width: 10px; 	border-radius: 8px;
+	background-color: #d6336c; align-self-center">Submit&nbsp;<i class="fa fa-arrow-right"></i></a>
+
   </div>
 
 
