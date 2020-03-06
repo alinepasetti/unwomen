@@ -8,7 +8,7 @@ const quiz = require('./../quiz.json');
 
 //render da question 1
 router.get('/question1/:id', (req, res, next) => {
-  let quiz1 = quiz[0];
+  const quiz1 = quiz[0];
   const { id } = req.params;
   User.findById(id)
     .then(user => {
@@ -37,13 +37,14 @@ router.post('/question1/:id', (req, res, next) => {
 // render da resposta 1
 router.get('/answer1/:id', (req, res, next) => {
   const { id } = req.params;
+  const quiz1 = quiz[0];
   User.findById(id)
     .then(user => {
       // função para verificar se a questão escolhida pelo user é a correta. Para os próximos é preciso alterar o número da question e o valor
       const isAnswerRight = user.question1 === 2;
 
       console.log(user);
-      res.render('quiz/answer', { user, isAnswerRight });
+      res.render('quiz/answer', { user, isAnswerRight, quiz1 });
     })
     .catch(error => {
       next(error);
