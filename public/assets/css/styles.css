@@ -44,6 +44,10 @@ label {
 	margin: 2em;
 }
 
+.video {
+	margin: auto;
+}
+
 button {
 	margin-top: 3em;
 	align-self: center;
