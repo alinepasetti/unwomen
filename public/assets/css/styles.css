@@ -29,43 +29,27 @@ nav,
 }
 
 label {
-<<<<<<< HEAD
   font-family: 'Muli', sans-serif;
   font-weight: normal;
   font-size: 1.5em;
-  margin: 0.1em 1em;
-=======
-	font-family: 'Muli', sans-serif;
-	font-weight: normal;
-	font-size: 1.5em;
-	margin: 0.4em 1em;
->>>>>>> 8f6d0869fc9a659f215f4b2362e7e55a3b58eb12
+  margin: 0.4em 1em;
 }
 .btn-primary {
   border-color: none;
 }
 
 button {
-<<<<<<< HEAD
-  margin-top: 2em;
+  margin-top: 15vw;
   align-self: center;
   justify-self: center;
   border: pink;
   text-decoration: none;
   border-style: none;
-=======
-	margin-top: 15vw;
-	align-self: center;
-	justify-self: center;
-	border: pink;
-	text-decoration: none;
-	border-style: none;
->>>>>>> 8f6d0869fc9a659f215f4b2362e7e55a3b58eb12
 }
 
 body > div > img {
-	align-self: center;
-	justify-self: center;
+  align-self: center;
+  justify-self: center;
 }
 a {
   align-self: center;
@@ -86,17 +70,10 @@ body {
 }
 
 .radio-inline {
-<<<<<<< HEAD
-  height: 1em;
+  height: 2em;
   margin-bottom: 0;
   padding: 0%;
   justify-self: center;
-=======
-	height: 2em;
-	margin-bottom: 0;
-	padding: 0%;
-	justify-self: center;
->>>>>>> 8f6d0869fc9a659f215f4b2362e7e55a3b58eb12
 }
 
 input {
@@ -147,4 +124,8 @@ form > input {
   text-align: center;
   color: #d6336c;
   border-radius: 3px;
+}
+
+h2 {
+  font-family: 'PlayfairDisplay';
 }

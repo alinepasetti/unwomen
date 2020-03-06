@@ -14,13 +14,12 @@
 </head>
 
 <body>
-  <nav>
+
+  <nav class="d-flex">
     <div class="container-fluid">
-      <a class="navbar-brand float-left" href="/">Equalizer</a>
-      <h2 class="float-right">{{quiz1.number}}/5</h2>
-      </div>
-    
-    
+      <a class="navbar-brand" style="width: 70vw;" href="/">Equalizer</a>
+    </div>
+      <h2 class="float-right d-flex align-self-center mr-4">{{quiz1.number}}/5</h2>
   </nav>
   <img class="imagemQuestion" src="{{quiz1.img}}"
     style=" max-width: 80%;min-width: 50%;min-height: 40vh;max-height: 50vH;">
