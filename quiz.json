@@ -1,10 +1,82 @@
 [
   {
     "id": "question1",
-    "question": "Lorem ipsum uahsuah ehra djahdu",
-    "answer1": ["dasdhaksdjhaskjdas", 10],
-    "answer2": ["dasdhaksdjhaskjdas", 0],
-    "answer3": ["dasdhaksdjhaskjdas", 20],
-    "img": "https://source.unsplash.com/random"
+    "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
+    "answer1": ["United States", 20],
+    "answer2": ["Switzerland", 0],
+    "answer3": ["Japan", 0],
+    "img": "/images/country_scatter1.png",
+    "rightAnswer": [
+      "Congratulations!",
+      "<h3>Capitalism right?</h3> <p>And do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br> Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+    ],
+    "wrongAnswer": [
+      ":(",
+      "<h3>This was a tough one!</h3> <p>But do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br>Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+    ]
+  },
+  {
+    "id": "question1",
+    "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
+    "answer1": ["United States", 20],
+    "answer2": ["Switzerland", 0],
+    "answer3": ["Japan", 0],
+    "img": "/images/country_scatter1.png",
+    "rightAnswer": [
+      "Congratulations!",
+      "<h3>Capitalism right?</h3> <p>And do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br> Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+    ],
+    "wrongAnswer": [
+      ":(",
+      "<h3>This was a tough one!</h3> <p>But do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br>Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+    ]
+  },
+  {
+    "id": "question1",
+    "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
+    "answer1": ["United States", 20],
+    "answer2": ["Switzerland", 0],
+    "answer3": ["Japan", 0],
+    "img": "/images/country_scatter1.png",
+    "rightAnswer": [
+      "Congratulations!",
+      "<h3>Capitalism right?</h3> <p>And do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br> Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+    ],
+    "wrongAnswer": [
+      ":(",
+      "<h3>This was a tough one!</h3> <p>But do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br>Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+    ]
+  },
+  {
+    "id": "question1",
+    "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
+    "answer1": ["United States", 20],
+    "answer2": ["Switzerland", 0],
+    "answer3": ["Japan", 0],
+    "img": "/images/country_scatter1.png",
+    "rightAnswer": [
+      "Congratulations!",
+      "<h3>Capitalism right?</h3> <p>And do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br> Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+    ],
+    "wrongAnswer": [
+      ":(",
+      "<h3>This was a tough one!</h3> <p>But do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br>Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+    ]
+  },
+  {
+    "id": "question1",
+    "question": "The following graph shows the number of weeks allowed to each parent for childcare. Each point represents one of the top 40 richest countries in the world. Guess the red dot.",
+    "answer1": ["United States", 20],
+    "answer2": ["Switzerland", 0],
+    "answer3": ["Japan", 0],
+    "img": "/images/country_scatter1.png",
+    "rightAnswer": [
+      "Congratulations!",
+      "<h3>Capitalism right?</h3> <p>And do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br> Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+    ],
+    "wrongAnswer": [
+      ":(",
+      "<h3>This was a tough one!</h3> <p>But do you know that there are only two countries in the world do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br>Do you know how it is at your workplace? <br> Mens have paternity leave as well?</p>"
+    ]
   }
 ]
