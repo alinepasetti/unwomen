@@ -39,7 +39,7 @@ label {
 }
 
 button {
-	margin-top: 2em;
+	margin-top: 3em;
 	align-self: center;
 	justify-self: center;
 	border: pink;
@@ -137,5 +137,5 @@ body {
 }
 
 h2 {
-  font-family: 'PlayfairDisplay';
+	font-family: 'PlayfairDisplay';
 }

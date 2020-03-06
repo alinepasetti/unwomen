@@ -1,17 +1,29 @@
+<!DOCTYPE html>
+
 <head>
-  <link rel="stylesheet" href="/styles/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Equalizer</title>
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/Highlight-Clean.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
-<nav class="navbar navbar-light navbar-expand-md" style="color: rgb(227,15,129);background-color: #f9dff3;">
-    <div class="container-fluid"><a class="navbar-brand" href="/">UnWomen - Blog</a></div>
-</nav>
+<body>
+  <nav>
+    <div class="container-fluid"><a class="navbar-brand" href="/">Equalizer</a></div>
+  </nav>
 
 
-{{#each blogs}}
+  {{#each blogs}}
 
-<article class="blog-title">
-<h1 class="text-center ;
+  <article class="blog-title">
+    <h1 class="text-center ;
   font-family: PlayfairDisplay;
   font-weight: bold;
   font-stretch: normal;
@@ -20,9 +32,10 @@
   letter-spacing: normal;
   text-align: center;
   color: #51427d;">{{title}}</h1>
-<p><strong>Category:</strong> {{category}}</p>
+    <p><strong>Category:</strong> {{category}}</p>
 
-  <div class="video">{{{video}}}</div>
+    <div class="video">{{{video}}}</div>
 
-</article>
-{{/each}}
+  </article>
+  {{/each}}
+</body>
