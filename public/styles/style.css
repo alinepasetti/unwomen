@@ -106,17 +106,18 @@ article {
 	justify-content: space-evenly;
 }
 .Blogs {
+	font-family: PlayfairDisplay;
 	display: flex;
 	align-content: center;
 	max-width: 90vw;
 }
 .CategoryBlog {
+	display: flex;
 	align-self: center;
 }
-
 article > .video {
 	align-self: center;
-	margin: 2em;
+  margin: 2em;
 }
 article > h1 {
 	font-family: PlayfairDisplay;
