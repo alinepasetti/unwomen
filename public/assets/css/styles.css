@@ -62,12 +62,6 @@ a {
 p {
   line-height: 1.5em;
 }
-body {
-  margin: 0;
-  line-height: 1;
-  color: #987d86;
-  font-family: 'Muli';
-}
 
 .radio-inline {
   height: 2em;
@@ -128,4 +122,24 @@ form > input {
   text-align: center;
   color: #d6336c;
   border-radius: 3px;
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 8px 10px 0 rgba(214, 51, 108, 0.04);
+}
+
+body {
+  margin: 0;
+  line-height: 1;
+  color: #987d86;
+  font-family: 'Muli';
+  background-color: #fffbfb;
+  background-image: url(../../images/bgimage.svg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+h2 {
+  font-family: 'PlayfairDisplay';
 }
