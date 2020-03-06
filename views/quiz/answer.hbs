@@ -16,18 +16,31 @@
     <div class="container-fluid"><a class="navbar-brand" href="#"
         style="font-family: PlayfairDisplay;font-weight: bold;color: #80284c;line-height: 1.6;">Equalizer</a></div>
   </nav>
-  <img class="align-self-center my-auto" src="assets/img/Investimentos-inteligentes.jpg"
+  <img class="align-self-center my-auto" src="{{quiz1.img2}}"
     style="max-width: 80%;min-width: 50%;min-height: 40vh;max-height: 50vH;">
+
   <div class="d-flex flex-column align-items-center align-content-center" style="margin: 10vw;">
-    <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat.&nbsp;ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.&nbsp;<br></p>
-      <a href="/quiz/question2/{{user._id}}" class="btn btn-primary align-self-center"
-     style="min-width: 20%;max-width: 50vw;">Next question&nbsp;<i
-        class="fa fa-arrow-right"></i>
-        </a>
+
+{{#if isAnswerRight}}
+
+
+    <h3>{{{quiz1.rightAnswer.[0]}}}</h3>
+    <p>{{{quiz1.rightAnswer.[1]}}}</p>
+
+    {{else}}
+
+    <h3>{{{quiz1.wrongAnswer.[0]}}}</h3>
+    <p>{{{quiz1.wrongAnswer.[1]}}}</p>
+
+
+    {{/if}}
+    <p class="text-left"><br></p>
+      <a href="/quiz/{{quiz1.next}}/{{user._id}}" class="btn btn-primary align-self-center"
+     style="min-width: 20%;max-width: 50vw;">Next question</a>
   </div>
+
+
+
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
