@@ -110,6 +110,9 @@ article {
 	align-content: center;
 	max-width: 90vw;
 }
+.text-center {
+	align-self: center;
+}
 
 article > .video {
 	align-self: center;
