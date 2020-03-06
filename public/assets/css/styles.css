@@ -14,5 +14,12 @@ nav {
 }
 
 body {
-	margin: 5em;
+	margin: 0;
+}
+
+body > div {
+	margin: 1em;
+}
+body > img {
+	margin: 0 auto;
 }
