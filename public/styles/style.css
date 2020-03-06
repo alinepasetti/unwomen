@@ -110,7 +110,7 @@ article {
 	align-content: center;
 	max-width: 90vw;
 }
-.text-center {
+.text-center > p {
 	align-self: center;
 }
 
