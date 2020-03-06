@@ -8,6 +8,7 @@
 .bodyQuestion {
 	display: flex;
 	flex-direction: column;
+	height: 100vh;
 }
 
 nav,
@@ -30,12 +31,35 @@ nav,
 }
 
 label {
-	font-family: PlayfairDisplay;
+	font-family: 'Muli', sans-serif;
 	font-weight: normal;
 	font-size: 1.5em;
-	margin: 0.1em;
+	margin: 0.1em 1em;
+}
+.btn-primary {
+	border-color: none;
 }
 
+button {
+	margin-top: 2em;
+	align-self: center;
+	justify-self: center;
+	border: pink;
+	text-decoration: none;
+	border-style: none;
+}
+
+a {
+	align-self: center;
+	justify-self: center;
+	border: pink;
+	text-decoration: none;
+	border-style: none;
+}
+
+p {
+	line-height: 1.5em;
+}
 body {
 	margin: 0;
 	line-height: 1;
@@ -44,6 +68,7 @@ body {
 }
 
 .radio-inline {
+	height: 1em;
 	margin-bottom: 0;
 	padding: 0%;
 	justify-self: center;
@@ -58,11 +83,22 @@ body > div {
 	flex-direction: column;
 	justify-content: space-evenly;
 	margin: 1em;
-	font-family: Muli, sans-serif;
+	font-family: 'Muli', sans-serif;
 }
 
 body > img {
 	margin: 0 auto;
+}
+
+.correctAswer {
+	font-family: PlayfairDisplay;
+	font-size: 28px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	color: #64b27e;
 }
 form {
 	display: flex;
