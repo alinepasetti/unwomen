@@ -39,6 +39,11 @@ label {
 	border-color: none;
 }
 
+article > .video {
+	align-self: center;
+	margin: 2em;
+}
+
 button {
 	margin-top: 3em;
 	align-self: center;
