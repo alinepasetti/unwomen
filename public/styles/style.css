@@ -105,10 +105,24 @@ article {
 	flex-direction: column;
 	justify-content: space-evenly;
 }
+.Blogs {
+	display: flex;
+	align-content: center;
+}
 
 article > .video {
 	align-self: center;
 	margin: 2em;
+}
+article > h1 {
+	font-family: PlayfairDisplay;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: justify;
+	color: #51427d;
 }
 
 .blog-title {

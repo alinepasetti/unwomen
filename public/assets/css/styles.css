@@ -44,6 +44,7 @@ label {
 	flex-direction: column;
 	align-content: center;
 	margin: 2em;
+	min-width: 90vw;
 }
 
 .video {

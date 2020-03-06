@@ -12,31 +12,22 @@
   <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/Highlight-Clean.css">
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Paris_RER_E_icon.svg/512px-Paris_RER_E_icon.svg.png">
+  <link rel="shortcut icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Paris_RER_E_icon.svg/512px-Paris_RER_E_icon.svg.png">
 </head>
 
-<body>
+<body class="Blogs">
   <nav>
     <div class="container-fluid"><a class="navbar-brand" href="/">Equalizer</a></div>
   </nav>
 
 
   {{#each blogs}}
-
   <article class="blog-title">
-    <h1 class="text-center" style="
-  font-family: PlayfairDisplay;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: center;
-  color: #51427d;">{{title}}</h1>
+    <h1 class="text-center">{{title}}</h1>
     <p><strong>Category:</strong> {{category}}</p>
 
     <div class="video">{{{video}}}</div>
-
   </article>
   {{/each}}
 </body>
