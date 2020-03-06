@@ -39,7 +39,11 @@ label {
 }
 
 button {
+<<<<<<< HEAD
   margin-top: 15vw;
+=======
+  margin-top: 2em;
+>>>>>>> 218cb73e2c081b89a0a5ac5cf11b25025535c79d
   align-self: center;
   justify-self: center;
   border: pink;
