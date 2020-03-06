@@ -9,11 +9,11 @@
     "img": "/images/paternal_leave_question.png",
     "img2": "/images/paternal_leave_answer.png",
     "rightAnswer": [
-      "Congratulations!",
+      "Congratulations! &#128516",
       "<p>Did you know that there are only two countries in the world that do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br> Curiosity: The country with the highest maternity leave period is Estonia with 80 weeks and the highest paternity leave is Japan with 30 weeks. <br> Mens have paternity leave as well?</p>"
     ],
     "wrongAnswer": [
-      ":(",
+      "&#128553",
       "<p>This was a tough one! But did you know that there are only two countries in the world that do not have paid maternity leave? <br> Papua New Guinea and the United States of America. <br>Curiosity: The country with the highest maternity leave period is Estonia with 80 weeks and the highest paternity leave is Japan with 30 weeks</p>"
     ],
     "number": 1
@@ -28,11 +28,11 @@
     "img": "/images/goverment_question.png",
     "img2": "/images/goverment_answer.png",
     "rightAnswer": [
-      "Yesss! Good Knowledge!",
+      "Yesss! Good Knowledge! &#128516",
       "<p>So little representativeness. As of June 2019, 11 women are serving as Head of State and 12 are serving as Head of Government. <br> And Rwanda has the highest number of women parliamentarians worldwide, where women have won 61.3% of seats in the lower house.</p>"
     ],
     "wrongAnswer": [
-      "Keep Going",
+      "Keep Going &#128553",
       "<p>Its so little representativeness, that is hard to belive! As of June 2019, 11 women are serving as Head of State and 12 are serving as Head of Government. <br> Did you know that Rwanda has the highest number of women parliamentarians worldwide, where women have won 61.3% of seats in the lower house.</p>"
     ],
     "number": 2
@@ -47,11 +47,11 @@
     "img": "/images/nobel_prize_question&answer.png",
     "img2": "/images/nobel_prize_question&answer.png",
     "rightAnswer": [
-      "Well done!",
+      "Well done! &#128516",
       "<p>Nobel prizes are famous for being heavily gender biased. <br> A 2019 paper published in Nature found that, even though there are fewer women researchers, a mathematical model revealed that women are strongly under-represented among Nobel laureates in all disciplines.</p>"
     ],
     "wrongAnswer": [
-      "Not quite right.",
+      "Not quite right. &#128553",
       "<p>All alternatives would have more men as an answer, but none with a difference as big as the Nobel Prize awards: Nobel prizes are famous for being heavily gender biased. <br> A 2019 paper published in Nature found that, even though there are fewer women researchers, a mathematical model revealed that women are strongly under-represented among Nobel laureates in all disciplines.</p>"
     ],
     "number": 3
@@ -66,11 +66,11 @@
     "img": "/images/domestic_violence_question&answer.png",
     "img2": "/images/domestic_violence_question&answer.png",
     "rightAnswer": [
-      "Correct answer.",
+      "Correct answer. &#128516",
       "<p>According to data from PSP and GNR, during 2018 in Portugal there were 23.600 reports of domestic violence, 19.971 of which the victimes were female.</p>"
     ],
     "wrongAnswer": [
-      "Don´t give up",
+      "Don´t give up! &#128553",
       "<p>According to data from PSP and GNR, during 2018 in Portugal there were 23.600 reports of domestic violence, 19.971 of which the victimes were female.</p>"
     ],
     "number": 4
@@ -85,11 +85,11 @@
     "img": "/images/pay_gap_question.png",
     "img2": "/images/pay_gap_answer.png",
     "rightAnswer": [
-      "Well done!",
+      "Well done! &#128516",
       "<p>According to data from Eurostat, women in the European Union received salaries that were 16.2% lower than man’s in 2016. <br> Portugal was the country where discrepancies worsened the most between 2011 and 2016 (4.6 percentage points). <br> In 2018, women's gross hourly earnings were on average 14.8 % below those of men in the EU. <br> Curiosity: The highest gender pay gap in the EU in 2018 was recorded in Estonia (22.7 %) which is the country that has the highest female maternity leave period!</p>"
     ],
     "wrongAnswer": [
-      "Don´t give up!",
+      "Don´t give up! &#128553",
       "<p>According to data from Eurostat, women in the European Union received salaries that were 16.2% lower than man’s in 2016. Portugal was the country where discrepancies worsened the most between 2011 and 2016 (4.6 percentage points). <br> In 2018, women's gross hourly earnings were on average 14.8 % below those of men in the EU. <br> Do you know how it is at your workplace? <br> Curiosity: The highest gender pay gap in the EU in 2018 was recorded in Estonia (22.7 %) which is the country that has the highest female maternity leave period!</p>"
     ],
     "number": 5
