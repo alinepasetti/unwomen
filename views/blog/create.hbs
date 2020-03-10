@@ -1,22 +1,36 @@
+<!DOCTYPE html>
+
 <head>
-  <link rel="stylesheet" href="/styles/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Equalizer</title>
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/Highlight-Clean.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Paris_RER_E_icon.svg/512px-Paris_RER_E_icon.svg.png">
 </head>
 
-<nav class="navbar navbar-light navbar-expand-md" style="color: rgb(227,15,129);background-color: #f9dff3;">
-    <div class="container-fluid"><a class="navbar-brand" href="/">UnWomen - Blog</a></div>
-</nav>
+<body>
+  <nav>
+    <div class="container-fluid"><a class="navbar-brand" href="/">Equalizer</a></div>
+  </nav>
 
-<h1>Create post</h1>
-<form action="/blog/create" method="POST">
-  <label for="title">Title</label>
-  <input type="text" id="title" name="title">
+  <h1>Create post</h1>
+  <form action="/blog/create" method="POST">
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title">
 
-  <label for="category">Category</label>
-  <input name="category" id="category" />
+    <label for="category">Category</label>
+    <input name="category" id="category" />
 
-  <label for="video">Video iFrame</label>
-  <input type="text" id="video" name="video">
+    <label for="video">Video iFrame</label>
+    <input type="text" id="video" name="video">
 
-  <button>Create</button>
-</form>
+    <button>Create</button>
+  </form>
+</body>
