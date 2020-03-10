@@ -1,63 +1,27 @@
-<head>
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-  </style>
-  <meta charset="utf-8">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-  </style>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Equalizer</title>
-  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
-  <link rel="stylesheet" href="/assets/css/Highlight-Clean.css">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Paris_RER_E_icon.svg/512px-Paris_RER_E_icon.svg.png">
-</head>
+<div class="result-page">
+  <h1>{{user.sum}}%</h1>
 
-<body>
-  <nav>
-    <div class="container-fluid"></div><a class="navbar-brand" href="/">Equalizer</a></div>
-  </nav>
-  <div class="d-flex flex-column align-items-center align-content-center" style="margin: 10vw;">
-    <p style="font-family: PlayfairDisplay;font-size: 5em;font-weight: bold;color: #d6336c;">{{user.sum}}%</p>
-    <strong></strong>
-
-    {{#if moreThan50}}
-    <p class="text-center"
-      style="font-size: 2em;line-height: -13.8;color: #51427d;font-weight: bold;font-family: PlayfairDisplay;">Amazing!
-    </p>
-    <p>You already have a lot of information. Check our blog for news and more information. <br>We would love to get in
+  {{#if moreThan50}}
+  <h3>Amazing!</h3>
+  <p>You already have a lot of information. Check our blog for news and more. <br>We would love to get in
       touch with you to discuss actions that we can do to change <strike>the future</strike> now.</p>
     {{else if score100}}
 
-    <p class="text-center"
-      style="font-size: 2em;line-height: -13.8;color: #51427d;font-weight: bold;font-family: PlayfairDisplay;">
-      Contratulations!</p>
-    <p style="color: #987d86; font-family: Muli;">You have a good knowledge about gender equality, but information is never enough! <br>Check our blog for more
-      information, follow us on our social media and let´s discuss actions that we can do it to change this gender
-      inequality. <br>Remember: Starts with you! ;)</p>
+  <h3>Contratulations!</h3>
+  <p>You have a good knowledge about gender equality, but information is never enough! <br>Check our blog for more and let´s discuss actions that we can do it to change this gender
+      inequality. <br>Remember: Change starts with you! ;)</p>
 
-    {{else}}
-    <p class="text-center"
-      style="font-size: 2em;line-height: -13.8;color: #51427d;font-weight: bold;font-family: PlayfairDisplay;">Don't
-      give up! </p>
-    <p style="color: #987d86; font-family: Muli;">You are just beginning this journey towards equality and we can do it
-      together. <br>Check our blog for more data and information. <br>If you have any questions, contact us on our
-      social media channels. We will love to get in touch with you!</p>
+  {{else}}
+  <h3>Don't give up!</h3>
+  <p>You are just beginning this journey towards equality and we can do it
+      together. <br>Check our blog for more data and information.</p>
 
-    {{/if}}
+  {{/if}}
 
-<a href="/blog" class="btn btn-primary mb-3" role="button" style="min-width:80%; max-width: 10px; 	border-radius: 8px;
-	background-color: #d6336c; align-self-center">See our blog&nbsp;<i class="fa fa-arrow-right"></i></a>
-
-
- <div class="buttons d-flex" style="min-width:80%;"><a class="btn btn-primary mb-3 justify-self-center" role="button"
-            href="https://api.whatsapp.com/send?text=Look%20this%20quiz!%20https://worldequalizer.herokuapp.com/quiz/result/{{user._id}}" target="_blank" style=" min-width: 80%;max-width: 100%; border-radius: 8px;
-	background-color: #37b24d; width: 100%;">Share your results!&nbsp;<i class="fa fa-whatsapp"></i></a>
-        </div>
-
+  <a href="/blog" class="btn red">See our blog&nbsp;<i class="fa fa-arrow-right"></i></a>
+  <a class="btn whatsapp-btn" href="https://api.whatsapp.com/send?text=Look%20this%20quiz!%20https://worldequalizer.herokuapp.com/quiz/result/{{user._id}}" target="_blank">Share your results!&nbsp;<i class="fa fa-whatsapp"></i></a>
+        
+</div>
   
     <table class="table">
       <thead>
@@ -78,24 +42,4 @@
     </table>
 
 
-  </div>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
-
-{{!-- {{#if moreThan50}}
-good msg
-{{else}}
-bad msg
-{{/if}}
-Your result 
-{{user.name}}
-{{user.sum}}
-
-{{#each users}}
-{{name}}
-{{sum}}
-{{/each}}
-
-<a href="/quiz/question2/{user._id}">next</a> --}}
+  

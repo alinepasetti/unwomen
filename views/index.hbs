@@ -1,79 +1,16 @@
-<!DOCTYPE html>
 
-<head>
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-  </style>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Equalizer</title>
-  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
-  <link rel="stylesheet" href="/assets/css/Highlight-Clean.css">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Paris_RER_E_icon.svg/512px-Paris_RER_E_icon.svg.png">
-</head>
-
-<body>
-  <nav>
-    <div class="container-fluid"><a class="navbar-brand ml-4" href="/">Equalizer</a></div>
-  </nav>
-  <div class="highlight-clean">
-    <div class="container d-flex flex-column align-items-center">
-      <div class="intro">
-        <h2 class="text-center ;" style="
-  font-family: PlayfairDisplay;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: center;
-  color: #51427d;">Let's work together to change the future!</h2>
-
-
-        <p class="text-justify" style="color: #987d86; font-family: Muli;">Gender Equality means equal rights and freedom for equal opportunities, participation, recognition and appreciation in all areas (society, political, economic, labor, personal and family).<br><br> Think of this quiz as a game to test and improve your awareness on the subject.</p>
-      
-      
-      </div>
-      <form  method="POST" action="/create-user" class="align-content-center" style="align-content-center">
-        <input class="bg-light border rounded border-light form-control-sm home-form" required type="text" name="name" placeholder="Name"
-          autocomplete="off">
-        <div class="buttons"><button class="btn btn-primary" role="button" href="" style="max-width: 100%;min-width: 80%;	border-radius: 8px;
-	background-color: #d6336c;">Start quiz&nbsp;<i class="fa fa-arrow-right"></i></button></div>
-        <div class="buttons"><a class="btn btn-primary" role="button"
-            href="https://api.whatsapp.com/send?text=Look%20this%20quiz!%20https://worldequalizer.herokuapp.com/" target="_blank" style=" min-width: 80%;max-width: 100%; border-radius: 8px;
-	background-color: #37b24d;">Share via Whatsapp&nbsp;<i class="fa fa-whatsapp"></i></a>
-        </div>
-    </div>
-    </form>
+<header class="container d-flex flex-column">
+  <div class="intro">
+    <h2>Let's work together to change the future!</h2>
+    <p>Gender Equality means equal rights and freedom for equal opportunities, participation, recognition and appreciation in all areas.<br><br> Think of this quiz as a game to test and improve your awareness on the subject.</p>   
   </div>
-  <p></p>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
 
 
+  <form class="home-form" method="POST" action="/create-user">
+    <small>What's your name?</small>
+    <input required type="text" name="name" placeholder="e.g. Aline Muller">
+    <button class="btn red">Start quiz&nbsp;<i class="fa fa-arrow-right"></i></button>
+    <a class="btn whatsapp-btn" href="https://api.whatsapp.com/send?text=Look%20this%20quiz!%20https://worldequalizer.herokuapp.com/" target="_blank">Share via Whatsapp&nbsp;<i class="fa fa-whatsapp"></i></a>  
+  </form>
 
-
-<iframe width="380"   src="https://www.youtube.com/embed/KTvSfeCRxe8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-
-
-
-
-{{!-- <head>
-  <link rel="stylesheet" href="/styles/style.css">
-  <title>UnWomen</title>
-</head>
-<h1>UnWoman 1</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nihil accusantium sunt architecto similique asperiores iure excepturi nostrum repudiandae expedita. Quasi qui perspiciatis quidem doloribus. Doloremque voluptatem delectus nobis ad.</p>
-<form method="POST" action="/create-user">
-  <input type="text" name="name" placeholder="Your name">
-  <button>Let's go</button>
-</form>
-
-<a href="https://api.whatsapp.com/send?text=Look%20this%20quiz!%20http://localhost:3000/" id="whatsapp-share-btn" rel="nofollow" target="_blank"><img class="whatsapp-icon align-self-center" src="https://image.flaticon.com/icons/svg/2111/2111728.svg" alt="whatsapp icon"> Invite a friend via WhatsApp</a> --}}
+</header>

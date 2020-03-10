@@ -1,43 +1,20 @@
-<head>
-  <meta charset="utf-8">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-  </style>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Equalizer</title>
-  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
-  <link rel="stylesheet" href="/assets/css/Highlight-Clean.css">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Paris_RER_E_icon.svg/512px-Paris_RER_E_icon.svg.png">
-</head>
+<p class="question-number"><span>{{quiz1.number}}</span>/5</p>
+  
+<figure class="imagemQuestion">
+  <img src="{{quiz1.img}}" alt={{quiz1.question}}>
+</figure>
 
-<body>
 
-  <nav class="d-flex">
-    <div class="container-fluid">
-      <a class="navbar-brand" style="width: 70vw;" href="/">Equalizer</a>
+  <form method="POST" action="/quiz/{{quiz1.id}}/{{user._id}}" class="question-form">
+    <label>{{quiz1.question}}</label>
+    <div class="radio-button">
+      <label><input type="radio" name="{{quiz1.id}}" id="1" value="{{quiz1.answer1.[1]}}"> {{quiz1.answer1.[0]}}</label>
+      <label><input type="radio" name="{{quiz1.id}}" id="2" value="{{quiz1.answer2.[1]}}"> {{quiz1.answer2.[0]}}</label>
+      <label><input type="radio" name="{{quiz1.id}}" id="3" value="{{quiz1.answer3.[1]}}"> {{quiz1.answer3.[0]}}</label>
     </div>
-      <h2 class="float-right d-flex align-self-center mr-4">{{quiz1.number}}/5</h2>
-  </nav>
-  <img class="imagemQuestion" src="{{quiz1.img}}"
-    style=" max-width: 80%;min-width: 50%;min-height: 40vh;max-height: 50vH;">
-  <div class="d-flex flex-column">
+    <button class="btn red">Submit&nbsp;<i class="fa fa-arrow-right"></i></button>
+  </form>
 
-    <form method="POST" action="/quiz/{{quiz1.id}}/{{user._id}}" class="d-flex flex-column">
-      <label>{{quiz1.question}}</label>
-      <br>
-      <label class="radio-inline"><input type="radio" name="{{quiz1.id}}" id="1" value="{{quiz1.answer1.[1]}}">
-        {{quiz1.answer1.[0]}}</label>
-      <label class="radio-inline"><input type="radio" name="{{quiz1.id}}" id="2" value="{{quiz1.answer2.[1]}}">
-        {{quiz1.answer2.[0]}}</label>
-      <label class="radio-inline"><input type="radio" name="{{quiz1.id}}" id="3" value="{{quiz1.answer3.[1]}}">
-        {{quiz1.answer3.[0]}}</label>
-      <button class="btn btn-primary" role="button" href="" style="min-width:80%; max-width: 10px; 	border-radius: 8px;
-	background-color: #d6336c;">Submit&nbsp;<i class="fa fa-arrow-right"></i></button>
-    </form>
-  </div>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
