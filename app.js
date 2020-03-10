@@ -15,8 +15,14 @@ const bindUserToViewLocals = require('./middleware/bind-user-to-view-locals.js')
 const indexRouter = require('./routes/index');
 const quizRouter = require('./routes/quiz');
 const blogRouter = require('./routes/blog');
-
 const app = express();
+
+const hbs = require('hbs');
+
+hbs.registerHelper('incremented', function(index) {
+  index++;
+  return index;
+});
 
 app.set('views', join(__dirname, 'views'));
 app.set('view engine', 'hbs');

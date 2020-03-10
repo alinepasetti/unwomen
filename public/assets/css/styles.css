@@ -116,7 +116,7 @@ nav {
 .whatsapp-btn {
   background-color: #37b24d;
   width: 100%;
-  margin: 1em 0;
+  margin: 1em 0 2em;
 }
 
 /* QUESTION styling */
@@ -240,8 +240,22 @@ nav {
 
 /* table section */
 .table {
-  width: 90%;
-  margin-bottom: 2em;
+  margin: 1em 0 2em;
+  background-color: white;
+  border-radius: 8px;
+  border-color: #fffbfb;
+  color: inherit;
+}
+
+.table td {
+  border-top: 3px solid #fffbfb;
+}
+
+td > span {
+  font-family: 'Playfair Display';
+  color: #f59f00;
+  font-weight: 600;
+  padding: 0 1em;
 }
 
 /* form > input {

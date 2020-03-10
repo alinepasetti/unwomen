@@ -21,25 +21,20 @@
   <a href="/blog" class="btn red">See our blog&nbsp;<i class="fa fa-arrow-right"></i></a>
   <a class="btn whatsapp-btn" href="https://api.whatsapp.com/send?text=Look%20this%20quiz!%20https://worldequalizer.herokuapp.com/quiz/result/{{user._id}}" target="_blank">Share your results!&nbsp;<i class="fa fa-whatsapp"></i></a>
         
-</div>
-  
+
+    <h3>Our top ten understanding people</h3>
     <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Points</th>
-        </tr>
-      </thead>
       <tbody>
         {{#each users}}
 
         <tr>
-          <td>{{name}}</td>
-          <td>{{sum}}%</td>
+          <td><span>{{incremented @index}}</span> {{name}}</td>
+          {{!-- <td>{{sum}}%</td> --}}
         </tr>
         {{/each}}
       </tbody>
     </table>
+</div>
 
 
   
