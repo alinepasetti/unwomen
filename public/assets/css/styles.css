@@ -72,12 +72,17 @@ nav {
 /* form section */
 
 .home-form {
+  /* align-self: center; */
+  margin: 0 auto;
+  width: 100%;
+  flex-grow: 1;
   margin-top: 1.5em;
   padding: 0 0.7em;
   display: flex;
   flex-direction: column;
   align-content: center;
   text-align: center;
+  max-width: 600px;
 }
 
 .home-form > input {

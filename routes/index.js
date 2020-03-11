@@ -9,15 +9,10 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 
-router.post('/create-user', (req, res, next) => {
+router.post('/create-user', async (req, res, next) => {
   const { name } = req.body;
-  User.create({ name })
-    .then(user => {
-      res.redirect(`/quiz/question1/${user._id}`);
-    })
-    .catch(error => {
-      next(error);
-    });
+  const user = await User.create({ name });
+  res.redirect(`/quiz/1/${user._id}`);
 });
 
 router.get('/private', routeGuard, (req, res, next) => {

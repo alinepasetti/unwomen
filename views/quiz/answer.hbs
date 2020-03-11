@@ -1,24 +1,24 @@
-<p class="question-number"><span>{{quiz1.number}}</span>/5</p>
+<p class="question-number"><span>{{quiz.id}}</span>/5</p>
 
 <figure class="imagemQuestion">
-  <img src="{{quiz1.img2}}">
+  <img src="{{quiz.img2}}">
 </figure>
 
 <div class="answer-body">
   
   {{!-- In case the answer is CORRECT, it will render a green title + an answer --}}
   {{#if isAnswerRight}}
-    <h2 class="correctAswer">{{{quiz1.rightAnswer.[0]}}}</h2>
-    <p>{{{quiz1.rightAnswer.[1]}}}</p>
+    <h2 class="correctAswer">{{{quiz.rightAnswer.[0]}}}</h2>
+    <p>{{{quiz.rightAnswer.[1]}}}</p>
 
   {{!-- In case the answer is INCORRECT, it will render a red title + an answer --}}
   {{else}}
-    <h3 class="wrongAswer">{{{quiz1.wrongAnswer.[0]}}}</h3>
-    <p>{{{quiz1.wrongAnswer.[1]}}}</p>
+    <h3 class="wrongAswer">{{{quiz.wrongAnswer.[0]}}}</h3>
+    <p>{{{quiz.wrongAnswer.[1]}}}</p>
 
   {{/if}}
 
 
-  <a href="/quiz/{{quiz1.next}}/{{user._id}}" class="btn red">Next&nbsp;<i class="fa fa-arrow-right"></i></a>
+  <a href="/quiz/{{quiz.next}}/{{user._id}}" class="btn red">Next&nbsp;<i class="fa fa-arrow-right"></i></a>
 
 </div>

@@ -25,11 +25,11 @@
     <h3>Our top ten understanding people</h3>
     <table class="table">
       <tbody>
-        {{#each users}}
+        {{#each topTenUsers}}
 
         <tr>
           <td><span>{{incremented @index}}</span> {{name}}</td>
-          {{!-- <td>{{sum}}%</td> --}}
+          <td>{{sum}}%</td>
         </tr>
         {{/each}}
       </tbody>
