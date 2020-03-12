@@ -52,7 +52,8 @@ nav {
 }
 
 .intro h2,
-.blog-body h1 {
+.blog-body h1,
+.blog-create-form h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   font-stretch: normal;
@@ -183,6 +184,7 @@ nav {
 .answer-body,
 .result-page,
 .table,
+blog-create-form,
 .blog-body {
   margin: 0 1.3em;
 }
@@ -304,22 +306,17 @@ td > span {
   }
 }
 
-/* form > input {
-  max-width: 100%;
-  min-width: 40%;
-} */
-
-/* .bodyQuestion {
+.blog-create-form {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-} */
+  max-width: 35em;
+  margin: 0 auto;
+}
 
-/* label {
-  font-family: 'Muli', sans-serif;
-  margin: 0.4em 0.5em;
-  line-height: 1em;
-} */
+.blog-create-form button,
+.blog-create-form label {
+  margin-top: 1em;
+}
 
 .blog-body {
   display: flex;
@@ -330,17 +327,27 @@ td > span {
 
 .blog-body h1 {
   margin-bottom: 0.5em;
+  font-size: 30px;
 }
 
 .video {
-  margin: auto;
-  justify-self: center;
-  align-self: center;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media screen and (min-width: 550px) {
   .blog-body {
     max-width: 35em;
     margin: 0 auto;
+  }
+  .blog-body h1 {
+    font-size: 40px;
   }
 }
