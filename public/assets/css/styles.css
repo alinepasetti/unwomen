@@ -184,8 +184,8 @@ nav {
 .answer-body,
 .result-page,
 .table,
-blog-create-form,
-.blog-body {
+.blog-body,
+.blog-create-form {
   margin: 0 1.3em;
 }
 
@@ -306,11 +306,18 @@ td > span {
   }
 }
 
+/* BLOG CREATE POST styling */
+
 .blog-create-form {
   display: flex;
   flex-direction: column;
   max-width: 35em;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 620px) {
+  .blog-create-form {
+    margin: 0 auto;
+  }
 }
 
 .blog-create-form button,
@@ -318,11 +325,13 @@ td > span {
   margin-top: 1em;
 }
 
+/* BLOG PAGE styling */
+
 .blog-body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  /* min-width: 90vw; */
+  margin: 0 1.3em 1.5em;
 }
 
 .blog-body h1 {
@@ -345,7 +354,7 @@ td > span {
 @media screen and (min-width: 550px) {
   .blog-body {
     max-width: 35em;
-    margin: 0 auto;
+    margin: 0 auto 2em;
   }
   .blog-body h1 {
     font-size: 40px;

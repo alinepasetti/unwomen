@@ -15,9 +15,10 @@ router.get('/', (req, res, next) => {
     });
 });
 
-router.get('/create', (req, res, next) => {
+router.get('/create-a-beautiful-post', (req, res, next) => {
   res.render('blog/create');
 });
+
 router.post('/create', (req, res, next) => {
   const { title, img, category, video } = req.body;
   const data = {
