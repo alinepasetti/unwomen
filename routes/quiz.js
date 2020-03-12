@@ -11,7 +11,8 @@ router.get('/result/:userId', async (req, res, next) => {
   const user = await User.findById(userId);
   // sort in the users DB to find the top ten players
   const topTenUsers = await User.find({}, null, { sort: { sum: -1 } }).limit(10);
-  console.log(topTenUsers);
+
+  // 2 variables to check wether the final result is bigger or smaller then 50 and then send this to the view, so we can render the correct message
   const moreThan50 = user.sum > 50;
   const score100 = user.sum == 100;
   res.render('quiz/result', { topTenUsers, user, moreThan50, score100 });
@@ -34,36 +35,34 @@ router.get('/:quizId/:userId', async (req, res, next) => {
 });
 
 // post route to save the user's response for each question and increment the sum
-router.post('/:quizId/:userId', (req, res, next) => {
+router.post('/:quizId/:userId', async (req, res, next) => {
   const { answer } = req.body;
   const { quizId, userId } = req.params;
   const questionWithNumber = 'question' + quizId;
 
-  User.findByIdAndUpdate(userId, { [questionWithNumber]: answer, $inc: { sum: answer } })
-    .then(() => {
-      res.redirect(`/quiz/answer/${quizId}/${userId}`);
-    })
-    .catch(error => {
-      next(error);
-    });
+  try {
+    await User.findByIdAndUpdate(userId, { [questionWithNumber]: answer, $inc: { sum: answer } });
+    res.redirect(`/quiz/answer/${quizId}/${userId}`);
+  } catch (error) {
+    next(error);
+  }
 });
 
 // rendering each answer
-router.get('/answer/:quizId/:userId', (req, res, next) => {
+router.get('/answer/:quizId/:userId', async (req, res, next) => {
   const { quizId, userId } = req.params;
+
+  //render the info related to each answer
   const quiz = quizInformation[quizId - 1];
+
+  //creates the variable which is the name of the property to save the user's answer into the db
   const questionWithNumber = 'question' + quizId;
 
-  User.findById(userId)
-    .then(user => {
-      // função para verificar se a questão escolhida pelo user é a correta. Para os próximos é preciso alterar o número da question e o valor
-      const isAnswerRight = user[questionWithNumber] === 20;
+  // function to verify if the user's answer was the correct one
 
-      res.render('quiz/answer', { user, quiz, isAnswerRight });
-    })
-    .catch(error => {
-      next(error);
-    });
+  const user = await User.findById(userId);
+  const isAnswerRight = user[questionWithNumber] === 20;
+  res.render('quiz/answer', { user, quiz, isAnswerRight });
 });
 
 module.exports = router;

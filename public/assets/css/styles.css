@@ -51,7 +51,8 @@ nav {
   padding: 0 0.7em;
 }
 
-.intro h2 {
+.intro h2,
+.blog-body h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
   font-stretch: normal;
@@ -118,10 +119,19 @@ nav {
   padding: 0.85em 1.15em;
 }
 
+.btn:hover {
+  border: 1px solid transparent;
+  color: white;
+  background-color: #80284c;
+}
+
 .whatsapp-btn {
   background-color: #37b24d;
   width: 100%;
   margin: 1em 0 2em;
+}
+.whatsapp-btn:hover {
+  background-color: #257434;
 }
 
 /* QUESTION styling */
@@ -137,6 +147,17 @@ nav {
 
 .question-number > span {
   color: #d6336c;
+}
+
+@media screen and (min-width: 600px) {
+  .question-number {
+    left: 90%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .question-number {
+    left: 95%;
+  }
 }
 
 /* image section */
@@ -161,7 +182,8 @@ nav {
 .question-form,
 .answer-body,
 .result-page,
-.table {
+.table,
+.blog-body {
   margin: 0 1.3em;
 }
 
@@ -186,6 +208,19 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 1em 0;
+}
+
+@media screen and (min-width: 750px) {
+  .imagemQuestion,
+  .answer-body,
+  .question-form {
+    max-width: 43em;
+    margin: 0 auto;
+  }
+  .answer-body,
+  .question-form {
+    margin-top: 1.5em;
+  }
 }
 
 /* ANSWER styling */
@@ -262,6 +297,12 @@ td > span {
   font-weight: 600;
   padding: 0 1em;
 }
+@media screen and (min-width: 780px) {
+  .result-page {
+    max-width: 46em;
+    margin: 0 auto;
+  }
+}
 
 /* form > input {
   max-width: 100%;
@@ -280,12 +321,15 @@ td > span {
   line-height: 1em;
 } */
 
-.blog-title {
+.blog-body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 2em;
-  min-width: 90vw;
+  /* min-width: 90vw; */
+}
+
+.blog-body h1 {
+  margin-bottom: 0.5em;
 }
 
 .video {
@@ -294,23 +338,9 @@ td > span {
   align-self: center;
 }
 
-/* button {
-  margin-top: 3em;
-  align-self: center;
-  justify-self: center;
-  border: pink;
-  text-decoration: none;
-  border-style: none;
-} */
-
-/* body > div > img {
-  align-self: center;
-  justify-self: center;
-} */
-/* a {
-  align-self: center;
-  justify-self: center;
-  border: pink;
-  text-decoration: none;
-  border-style: none;
-} */
+@media screen and (min-width: 550px) {
+  .blog-body {
+    max-width: 35em;
+    margin: 0 auto;
+  }
+}
