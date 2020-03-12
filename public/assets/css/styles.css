@@ -46,6 +46,19 @@ nav {
 /* HOME styling */
 
 /* Content section */
+
+.blog-nav-link {
+  top: 4.2%;
+  left: 81%;
+  text-align: right;
+}
+
+@media screen and (min-width: 500px) {
+  .blog-nav-link {
+    right: 2em;
+  }
+}
+
 .intro {
   margin: 0 auto;
   padding: 0 0.7em;
@@ -74,7 +87,6 @@ nav {
 /* form section */
 
 .home-form {
-  /* align-self: center; */
   margin: 0 auto;
   width: 100%;
   flex-grow: 1;
@@ -137,16 +149,20 @@ nav {
 
 /* QUESTION styling */
 
-.question-number {
+.question-number,
+.blog-nav-link {
   position: absolute;
-  left: 83%;
-  top: 32px;
   font-family: 'Playfair Display';
   font-size: 20px;
   letter-spacing: 2px;
 }
+.question-number {
+  left: 83%;
+  top: 32px;
+}
 
-.question-number > span {
+.question-number > span,
+.blog-nav-link > a {
   color: #d6336c;
 }
 
@@ -359,4 +375,9 @@ td > span {
   .blog-body h1 {
     font-size: 40px;
   }
+}
+
+a:hover {
+  text-decoration: none;
+  color: #80284c;
 }
