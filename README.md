@@ -14,5 +14,7 @@ The website was developed during a hackathon in less than 8 hours and awarded th
 
 ## Authors
 [Aline Muller Pasetti](https://github.com/alinepasetti)
+
 [Matheus Carvalho](https://github.com/carvalhobfr)
+
 [Diogo Santos](https://github.com/Diogo107)
