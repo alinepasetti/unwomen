@@ -12,6 +12,12 @@ During the 8-hour hackathon, each group needed to develop an app focused on the 
 ## About
 The website was developed during a hackathon in less than 8 hours and awarded the 1st place. The teams were randomly selected and the team members would bring knowledge from the web development and data analysis area.
 
+## Technologies
+- Node.js
+- Handlebars
+- CSS
+- MongoDB
+
 ## Authors
 [Aline Muller Pasetti](https://github.com/alinepasetti)
 
