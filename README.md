@@ -24,3 +24,5 @@ The website was developed during a hackathon in less than 8 hours and awarded th
 [Matheus Carvalho](https://github.com/carvalhobfr)
 
 [Diogo Santos](https://github.com/Diogo107)
+
+[Ricardo Zacarias - Data Analyst](https://github.com/ricardozacarias)
